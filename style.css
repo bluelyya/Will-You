@@ -6,15 +6,21 @@
 }
 
 body{
-    background: linear-gradient(
+    background:linear-gradient(
         135deg,
         #ffe5ec,
         #ffd6e0,
-        #fff1f5
+        #fff1f5,
+        #ffe5ec
     );
 
+    background-size:400% 400%;
+
+    animation:bgMove 12s ease infinite;
+
     min-height:100vh;
-    overflow-y:auto;
+
+    overflow-x:hidden;
 }
 
 .slide{
@@ -179,4 +185,20 @@ a{
         transform:translateY(-120vh) rotate(360deg);
         opacity:0;
     }
+}
+
+@keyframes bgMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
 }
