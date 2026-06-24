@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai Ajiven Kalendra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hearts"></div>
+
+    <!-- SLIDE 1 -->
+    <section class="slide active" id="slide1">
+        <div class="card">
+
+            <img src="gyan.jpg.jpeg" class="hero-photo">
+
+            <h1>Hai Ajip</h1>
+
+            <p>
+                Sampai juga kita disini, pertama makasih karena udah mau baca
+                bot ini. Maaf effort gua cuma sampe segini, tapi perasaan gua
+                gak sekedar itu jip. Kayak nya lu juga bosen denger kalimat ini dari gua,
+                tapi sekali lagi... Gua suka sama lu jip. Gua suka sama semua yang ada
+                di lu. Gua suka habisin waktu bareng lu. Gua suka sebagian
+                besar waktu gua habis cuma sama lu. Gua mau buat banyak kenangan bareng lu.
+                Gua mau bahagia dan sedih bareng lu.
+            </p>
+
+            <button onclick="nextSlide('slide2')">
+                So...
+            </button>
+        </div>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide" id="slide2">
+        <div class="card">
+            <h1>Will you be mine?</h1>
+
+            <div class="btn-group">
+                <button onclick="yesAnswer()">
+                    Yes
+                </button>
+
+                <button onclick="nextSlide('slideNo')">
+                    Nah
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAWABAN TIDAK -->
+    <section class="slide" id="slideNo">
+        <div class="card">
+            <img src="mksh.JPG.jpeg" class="meme">
+
+            <h2>it's okay</h2>
+
+            <button onclick="nextSlide('slide2')">
+                Anu jip, coba pikir lagi 😅
+            </button>
+        </div>
+    </section>
+
+    <!-- JAWABAN YA -->
+    <section class="slide" id="slideYes">
+        <div class="card">
+            <h1>WADIDAWW😘💜</h1>
+
+            <p>
+                hehe jadi malu... makasih ya jip udah mau nerima gua.
+                gua gak janji, tapi gua akan usahakan yang terbaik untuk
+                lu, kita, dan hubungan ini. makasih karena udah izinin gua
+                buat jadi orang yang spesial buat lu. ayo kita bahagia bareng-bareng.
+                ayo kita buat rencana apapun itu yang menyenangkan. asal bareng lu,
+                semua pasti terasa menyenangkan dan indah.
+
+            </p>
+
+            <div class="vertical-buttons">
+                <a href="https://open.spotify.com/track/0huV20ZR9HzTmBtXeYpEwD?si=G0MpMm2FQYW3RwW0_3U2Aw"
+                   target="_blank">
+                    <button>🎶 it feels like Ah</button>
+                </a>
+
+                <a href="https://t.me/PribumiY"
+                   target="_blank">
+                    <button>💬 ayo bilang iya sekali lagi ke aku</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

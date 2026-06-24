@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Quicksand',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        #ffe5ec,
+        #ffd6e0,
+        #fff1f5
+    );
+    overflow:hidden;
+    height:100vh;
+}
+
+.slide{
+    display:none;
+    width:100%;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+
+.slide.active{
+    display:flex;
+}
+
+.card{
+    width:90%;
+    max-width:500px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(10px);
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.1);
+}
+
+h1{
+    color:#fb6f92;
+    margin-bottom:20px;
+}
+
+p{
+    color:#6d435a;
+    line-height:1.8;
+}
+
+button{
+    margin-top:20px;
+
+    border:none;
+
+    background:#ff8fab;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.btn-group{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.vertical-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.vertical-buttons button{
+    width:250px;
+}
+
+a{
+    text-decoration:none;
+}
+
+.meme{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.hero-photo{
+    width:100%;
+    max-width:250px;
+
+    margin-bottom:20px;
+
+}
